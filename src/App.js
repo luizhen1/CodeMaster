@@ -28,6 +28,8 @@ function App() {
     </Routes>
     </BrowserRouter>
 
+    /* Conteúdo do restante do site */
+
     
   );
 }

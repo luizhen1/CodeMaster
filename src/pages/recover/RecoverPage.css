@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width:100%;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+
+
+.container-recover{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    background-color: #343541;
+}
+
+
+.container-recover-form-btn link{
+ text-decoration: none;
+ background-color: transparent;
+}
+
+.container-recover-form-btn a{
+    text-decoration: none;
+   }
+
+
+.wrap-recover{
+    
+    width: 500px;
+    margin-left: -50%;
+    background-color: #40414f;
+    border-radius: 10px;
+    justify-content: center;
+
+    overflow: hidden;
+    padding: 77px 55px 36px 55px;
+
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.recover-form{
+    width: 100%;
+    
+}
+
+.recover-form-title{
+    display: block;
+    font-size: 35px;
+    color: azure;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+
+
+.wrap-recover-input{
+    width: 100%;
+    position:relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+}
+
+
+
+
+.txt-1{
+    position: relative;
+    right: -5px;
+    font-size: 14px;
+    color: #adadad;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.txt-2{
+    position: relative;
+    left: 25px;
+    font-size: 14px;
+    color: #6a7dfe;
+    line-height: 1.5;
+    text-decoration: none;
+    
+}
+
+input{
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    border: none;
+    display: block;
+
+    width: 100%;
+    height: 45px;
+
+    background-color: transparent;
+
+    padding: 0 5px;
+
+    margin-left: 30px;
+   
+}
+
+.focus-input{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+    color: #adadad;
+}
+
+.focus-input::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+    background: -webkit-linear-gradient(to left, #21d4fd, #b721ff);
+    background: -o-linear-gradient(to left, #21d4fd, #b721ff);
+    background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.focus-input::after{
+    font-size:15px ;
+    color: #999999;
+    line-height: 1.2;
+
+    content: attr(data-placeholder);
+
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 40px;
+
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+}
+
+.input:focus{
+    outline: 0;
+}
+
+input:focus + .focus-input::after{
+    top: -15px;
+    left: -15px;
+}
+
+input:focus + .focus-input::before{
+    width: 100%;
+}
+
+.has-val + .focus-input::after{
+    top: -15px;
+    left: -15px;
+}
+
+.has-val + .focus-input::before{
+    width: 100%;
+}
+
+.conainer-register-form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+
+
+.recover-form-btn{
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+   background-color: #8392d0;
+}
+
+.recover-form-btn:hover{
+    cursor: pointer;
+}
+
+.text-recover-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.txt1{
+    font-size: 14px;
+    color: #adadad;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.txt2{
+    font-size: 14px;
+    color: #6a7dfe;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .wrap-recover{
+    margin-left: 5px
+    
+    }
+    
+    
+    }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+   
+    .wrap-recover{
+        width: 390px;
+        margin-left: -20px;
+    }
+
+    
+}

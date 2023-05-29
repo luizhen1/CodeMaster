@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './NewPasswordPage.css'
+import imgnovasenha from './../../assets/img-nova-senha.png'
 
 
 function NewPasswordPage() {
@@ -45,6 +46,10 @@ const [confirmnewpassword, setConfirmNewPassword] = useState("")
             
           </form>
           
+        </div>
+
+        <div className="imgnovasenha">
+        <img src={imgnovasenha} alt="img nova senha"  />
         </div>
       </div>
     </div>

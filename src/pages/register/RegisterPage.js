@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './RegisterPage.css'
+import imgregister from './../../assets/imgregister.png'
 
 
 
@@ -102,6 +103,17 @@ const [Document, setDocument] = useState("")
           </form>
          
         
+        </div>
+
+        
+
+        <div className="imgregister">
+        <img src={imgregister} alt="img register"  />
+        </div>
+
+        <div className="slogan-register">
+          <h2>Junte-se a família</h2>
+          <h4>CodeMaster</h4>
         </div>
         
       </div>

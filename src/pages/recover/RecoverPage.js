@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './RecoverPage.css'
 import { Link } from 'react-router-dom';
+import imgsenha from './../../assets/img-senha.png'
 
 
 function RecoverPage() {
@@ -36,6 +37,11 @@ const [email, setEmail] = useState("")
             
           </form>
           
+        </div>
+
+
+        <div className="logo-senha">
+        <img src={imgsenha} alt="img login"  />
         </div>
       </div>
     </div>

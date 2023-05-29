@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './LoginPage.css'
 import loginlogo from './../../assets/login-icon.png'
 import passwordlogo from './../../assets/password-icon.png'
+import imglogin from './../../assets/logologin.png'
 
 
 
@@ -64,6 +65,15 @@ const [password, setPassword] = useState("")
           
         
         </div>
+
+
+        <div className="imglogin">
+        <img src={imglogin} alt="img login"  />
+        </div>
+
+
+
+
       </div>
     </div>
   );

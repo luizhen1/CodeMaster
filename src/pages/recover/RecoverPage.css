@@ -25,7 +25,7 @@
 
     padding: 15px;
 
-    background-color: #343541;
+    background: linear-gradient(to right, #40414f 60%, #8392d0 40%);
 }
 
 
@@ -249,7 +249,13 @@ input:focus + .focus-input::before{
     text-decoration: none;
 }
 
-
+.logo-senha img{
+  
+    width: 400px;
+    position: absolute;
+    left: 710px;
+    top: 150px;
+}
 
 @media (max-width: 600px) {
 

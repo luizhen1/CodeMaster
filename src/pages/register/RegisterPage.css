@@ -258,24 +258,28 @@ input:focus + .focus-input::before{
 
 .imgregister img{
   
-    width: 600px;
-    position: absolute;
-    left: 600px;
-    top: 200px;
+    width: 650px;
+    
+    position:absolute;
+    left: 50%;
+    bottom: 10%;
+    flex-wrap: wrap;
 }
 
 .slogan-register h2{
     position: absolute;
-    left: 700px;
-    top: 180px;
+    flex-wrap: wrap;
+    left: 55%;
+    top: 18%;
    font-size: 50px;
    color: white;
 }
 
 .slogan-register h4{
     position: absolute;
-    left: 750px;
-    top: 230px;
+    flex-wrap: wrap;
+    left: 57.4%;
+    top: 23%;
    font-size: 50px;
    color: white
 }
@@ -287,8 +291,16 @@ input:focus + .focus-input::before{
     margin-left: 5px
     
     }
+    .imgregister img{
+        width: 0%;
+       }
+    .slogan-register h2{
+        font-size: 0%;
+    }
 
-    
+    .slogan-register h4{
+        font-size: 0%;
+    }
     
     
     }
@@ -300,6 +312,75 @@ input:focus + .focus-input::before{
         margin-left: -20px;
     }
 
+   .imgregister img{
+    width: 0%;
+   }
+
+
+   .slogan-register h2{
+    font-size: 0%;
+}
+
+.slogan-register h4{
+    font-size: 0%;
+}
+    
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+   
+   
+
+    .imgregister img{
+        width: 650px;
+        
+        position:absolute;
+        left: 45%;
+        bottom: 10%;
+        flex-wrap: wrap;
+        
+    }
+
+    .slogan-register h2{
+
+    left: 50%;
+    top: 18%;
+   
+    }
+
+    .slogan-register h4{
+    left: 55%;
+    top: 23%;
+   
+    }
+
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
    
     
+
+    .imgregister img{
+        width: 650px;
+        
+        position:absolute;
+        left: 45%;
+        bottom: 10%;
+        flex-wrap: wrap;
+        
+    }
+
+    .slogan-register h2{
+
+        left: 55%;
+        top: 18%;
+       
+        }
+    
+        .slogan-register h4{
+        left: 57.4%;
+        top: 23%;
+       
+        }
 }

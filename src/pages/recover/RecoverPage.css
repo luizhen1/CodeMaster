@@ -251,10 +251,12 @@ input:focus + .focus-input::before{
 
 .logo-senha img{
   
-    width: 400px;
-    position: absolute;
-    left: 710px;
-    top: 150px;
+    width: 500px;
+    
+    position:absolute;
+    left: 50%;
+    bottom: 20%;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
@@ -263,6 +265,10 @@ input:focus + .focus-input::before{
     margin-left: 5px
     
     }
+
+    .logo-senha img{
+        width: 0%;
+     }
     
     
     }
@@ -274,5 +280,39 @@ input:focus + .focus-input::before{
         margin-left: -20px;
     }
 
+    .logo-senha img{
+        width: 0%;
+     }
+
     
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+   
+   
+
+    .logo-senha img{
+        width: 500px;
+        
+        position:absolute;
+        left: 55%;
+        bottom: 20%;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+   
+    
+
+    .logo-senha img{
+        width: 500px;
+        
+        position:absolute;
+        left: 55%;
+        bottom: 20%;
+        flex-wrap: wrap;
+        
+    }
 }
